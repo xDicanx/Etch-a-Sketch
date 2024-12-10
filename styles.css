@@ -1,0 +1,93 @@
+/* Estilo global */
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #c6e6f5, #f3d1f4);
+  color: #333;
+}
+
+/* Contenedor principal */
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Título */
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #5a4a99;
+}
+
+/* Área del Etch-A-Sketch */
+.etch-container {
+  border: 3px solid #5a4a99;
+  border-radius: 15px;
+  width: 600px;
+  height: 600px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+.etch-grid {
+  display: grid;
+  width: 100%;
+  height: 100%;
+}
+
+.row {
+  display: flex;
+  align-items: stretch;
+}
+
+.corner-top-left {
+  border-top-left-radius: 10px; /* Redondear solo la esquina superior izquierda */
+}
+
+.corner-top-right {
+  border-top-right-radius: 10px; /* Redondear solo la esquina superior derecha */
+}
+
+.corner-bottom-left {
+  border-bottom-left-radius: 10px; /* Redondear solo la esquina inferior izquierda */
+}
+
+.corner-bottom-right {
+  border-bottom-right-radius: 10px; /* Redondear solo la esquina inferior derecha */
+}
+
+/* Controles */
+.controls {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.btn {
+  width: 80px; 
+  height: 80px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 50%; /* rounds button*/
+  cursor: pointer;
+  background: linear-gradient(135deg, #5a4a99, #6c63ff);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  transition: transform 0.2s ease;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  background: linear-gradient(135deg, #6c63ff, #5a4a99);
+}
